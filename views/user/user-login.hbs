@@ -1,0 +1,51 @@
+<section >
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center m-5 p-5">
+      
+      <div class="col-md-4 ">
+        <form action="/user-login" method="post">
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            <h1 class="fw-normal mb-0 me-3 text-primary" style="padding-left: 6.5rem;">Login Here</h1>
+            
+          </div>
+
+
+        
+          <div class="form-outline mb-4 mt-5">
+               <label class="form-label" for="form3Example3" style="font-size: larger;">Email address</label>
+            <input type="email" id="form3Example3" class="form-control form-control-md" name="email"
+              placeholder="Enter a valid email address" />
+           
+          </div>
+
+         
+          <div class="form-outline mb-3">
+              <label class="form-label" for="form3Example4" style="font-size: larger;">Password</label>
+            <input type="password" id="form3Example4" class="form-control form-control-md" name="password"
+              placeholder="Enter password" />
+            
+          </div>
+          {{#if loginErr}}
+          <p class="error">{{loginErr}}</p>
+          {{/if}}
+
+          <div class="d-flex justify-content-between align-items-center pt-2">
+     
+            
+            <a href="/signup" class=" text-primary">Dont't have an Account?, Create One.</a>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button class="btn btn-primary"
+              style="font-size:medium; padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  
+ 
+  
+
+</section>
