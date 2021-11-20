@@ -59,6 +59,8 @@ router.get('/logout',(req,res)=>{
   res.redirect('/')
 })
 
+
+
 router.get('/cart',verifyLogin,(req,res)=>{
   res.render('user/cart')
 })
